@@ -8,7 +8,6 @@ RUN dnf install -y centos-release-stream && \
     rm -rf /tmp/* && \
     rm -rf /var/cache/yum && \
     rm -rf /var/cache/dnf && \
-    find /var/log -type f -name '*.log' -delete && \
-    mkdir /workdir
+    find /var/log -type f -name '*.log' -delete
 
-WORKDIR /workdir
+WORKDIR /opt
