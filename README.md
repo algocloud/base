@@ -10,13 +10,19 @@ A base image for most of other Algocloud images:
 Just start your image from this one:
 
 ```dockerfile
-FROM algocloud/base
+FROM algocloud/base:1.0
 ```
 
-Recommendations:
+## Recommendations
 
 - Put your app in `/opt` directory
 - Avoid unnecessary whole-system upgrades (they should happen here)
+
+## Build
+
+```
+docker build --squash -t algocloud/base:1.0 .
+```
 
 ## License
 
