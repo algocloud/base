@@ -10,7 +10,7 @@ A base image for most of other Algocloud images:
 Just start your image from this one:
 
 ```dockerfile
-FROM algocloud/base:1.0
+FROM registry.algocloud.dev/algocloud/base:1.0
 ```
 
 ## Recommendations
